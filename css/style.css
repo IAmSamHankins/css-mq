@@ -1,6 +1,21 @@
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 16px;
+  font-family: "arial";
+}
+
+.preview h1 {
+  padding: 10px 0px 0px 10px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#heading {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .preview {
@@ -8,26 +23,46 @@ body {
   height: 250px;
 }
 
+@media screen and (min-width: 575px) {
+  .preview {
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 200px;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .preview {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+  }
+}
+
 .preview.baku {
   background-image: url("/images/baku.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 
 .preview.london {
   background-image: url("/images/london.png");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 
 .preview.madrid {
   background-image: url("/images/madrid.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
-
 }
 
 .preview.rome {
@@ -35,5 +70,4 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-
 }
